@@ -1,5 +1,5 @@
 
-package arrays;
+//package arrays;
 
 public class Arrays {
 

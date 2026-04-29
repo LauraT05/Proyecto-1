@@ -1,5 +1,5 @@
 
-package arrays;
+//package arrays;
 
 public class ArrayMulti2 {
       public static void main(String[] args){

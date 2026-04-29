@@ -1,5 +1,5 @@
 
-package cursojava;
+//package cursojava;
 
 import java.util.Scanner;
 

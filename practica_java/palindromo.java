@@ -4,9 +4,9 @@ public class palindromo {
     
     public static void main(String[] args){
         Scanner leer = new Scanner(System.in);
-
+        System.err.println("");
         System.out.println("ES PALINDROMO?");        
-        System.out.println("Ingrese palabra o frase : ");
+        System.out.println("Ingrese palabra o frase : \n");
         String cadenaOriginal = leer.nextLine(); //1. recibir cadena
 
         // Limpiar espacios y convertir a minúsculas

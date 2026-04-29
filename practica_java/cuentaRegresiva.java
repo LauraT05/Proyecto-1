@@ -1,5 +1,5 @@
 
-package funciones;
+//package funciones;
 
 public class cuentaRegresiva {
     public static void main(String[] args){
