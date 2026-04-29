@@ -1,8 +1,6 @@
 """
 Ejercicio: Análisis de Ventas Mensuales con NumPy
-Analista: [Nombre del Analista Jr]
-Revisado por: [Analista Senior]
-Fecha: [Fecha]
+Analista: Laura Traslavina
 """
 
 import numpy as np
@@ -94,25 +92,6 @@ print("-" * 50)
 for mes, total in zip(meses, total_por_mes): #zip: funcion que combina 2 o mas listas
                                             #Toma elementos en la misma posición de cada lista y los empareja
     print(f"{mes}: ${total:>9,.0f}")
-'''EJEMPLO ZIP 
-meses = ["Enero", "Febrero", "Marzo"]
-total_por_mes = [1000, 1500, 2000]
-
-zip() crea pares: ("Enero", 1000), ("Febrero", 1500), ("Marzo", 2000)
-
-FOR MES, TOTAL IN : desempaquetado de tuplas,
-    mes recibe el primer elemento del par (el nombre del mes)
-    total recibe el segundo elemento (el valor numérico)
-    
-print(f"{mes}: ${total:>9,.0f}")
-{mes} → imprime el nombre del mes
-: $ → texto literal ": $"
-{total:>9,.0f} → formatea el número:
-> → alineación a la derecha
-9 → ancho total de 9 caracteres
-, → separador de miles (1,000, 2,500)
-.0f → 0 decimales (formato entero)
-'''
 
 print("\nPROMEDIO DE VENTAS POR PRODUCTO:")
 print("-" * 50)
@@ -145,20 +124,9 @@ print(f"Forma original: {ventas_array.shape}")
 print(f"Forma después de reshape: {ventas_3d.shape}")
 print("\nContenido del array 3D:")
 for i, producto in enumerate(productos): #bucle
-    '''productos → lista con nombres de productos
-       enumerate(productos) → genera pares (índice, valor)
-       ejemplo: productos = ["Laptop", "Mouse", "Teclado"]
-                 enumerate genera: (0, "Laptop"), (1, "Mouse"), (2, "Teclado")
-'''
     print(f"\n{producto}:") # Imprimir nombre del producto 
     print(f"{'='*30}") #Crea una línea visual para separar secciones
     print(ventas_3d[i])
-    '''ventas_3d[i] → accede a la sección i del array 3D
-        Como i viene de enumerate(), coincide con el índice del producto'''
-'''ESTRUCTURA DEL ARRAY 3D: 
-1 CAPA O DIMENSION: producto A, producto B, producto C
-2 CAPA O DIMENSION: periodo de tiempo Meses
-3 CAPA O DIMENSION: categoria Ventas '''
 
 # Transposición
 print("\n2. TRANSPOSICIÓN DE LA MATRIZ:")
